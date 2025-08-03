@@ -81,8 +81,8 @@ async function askAndSort(data: DataType) {
 			data.map(item => {
 				return {
 					'🗓️  Date': item.date,
-					'⬆️  Upload Data': item.upload,
-					'⬇️  Download Data': item.download
+					'⬆️  Uploaded Data': item.upload,
+					'⬇️  Downloaded Data': item.download
 				}
 			})
 		)
