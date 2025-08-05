@@ -63,8 +63,8 @@ async function askAndSort(data: DataType) {
 
 		rawFile.split('\n').forEach((line, index) => {
 			if (index === 0) return
-			if (!line) return
 			line = line.trim()
+			if (!line) return
 			const [date, uploadDownload] = line.split(' ')
 			const [upload, download] = uploadDownload.split('/')
 			data.push({
